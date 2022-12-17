@@ -59,6 +59,7 @@ typedef struct bus_s
 extern bus_t bus;
 
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
+size_t getline(char **content, size_t *n, FILE *file);
 ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
 void f_push(stack_t **head, unsigned int number);
